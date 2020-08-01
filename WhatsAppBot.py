@@ -30,7 +30,7 @@ if data == 'text':
     type_message.send_keys(message)
     time.sleep(1)
 
-    button_send = web_Driver.find_element_by_class_name("_1U1xa")
+    button_send = web_Driver.find_element_by_xpath('//span[@data-testid="send"]')
     button_send.click()
 
 elif data == 'iv':
